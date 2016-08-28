@@ -17,9 +17,9 @@ import io.netty.channel.socket.nio.NioSocketChannel;
 public class Client {
     public static void main(String[] args) throws Exception {
 
-        EventLoopGroup workgroup = new NioEventLoopGroup();
+        EventLoopGroup workGroup = new NioEventLoopGroup();
         Bootstrap b = new Bootstrap();
-        b.group(workgroup)
+        b.group(workGroup)
                 .channel(NioSocketChannel.class)
                 .handler(new ChannelInitializer<SocketChannel>() {
                     @Override
@@ -32,9 +32,10 @@ public class Client {
 
         //buf
         cf1.channel().writeAndFlush(Unpooled.copiedBuffer("777".getBytes()));
+        cf1.channel().flush();
 
         cf1.channel().closeFuture().sync();
-        workgroup.shutdownGracefully();
+        workGroup.shutdownGracefully();
 
     }
 }
