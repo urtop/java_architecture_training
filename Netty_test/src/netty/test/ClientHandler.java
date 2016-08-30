@@ -1,9 +1,13 @@
 package netty.test;
 
 import io.netty.buffer.ByteBuf;
+import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerAdapter;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.util.ReferenceCountUtil;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class ClientHandler extends ChannelHandlerAdapter {
 
@@ -16,7 +20,13 @@ public class ClientHandler extends ChannelHandlerAdapter {
 			buf.readBytes(data);
 			String request = new String(data, "utf-8");
 			System.out.println("Client: " + request);
-			
+
+
+            //send data to server
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			String result = br.readLine();
+			ctx.channel().writeAndFlush(Unpooled.copiedBuffer(result.getBytes()));
+
 			
 		} finally {
 			ReferenceCountUtil.release(msg);

@@ -44,10 +44,9 @@ public class Server {
                 })
 
                 //下面的配置都是针对NioServerSocketChannel的
-                .option(ChannelOption.SO_BACKLOG,128)
-                .option(ChannelOption.SO_KEEPALIVE,true)
-                .option(ChannelOption.SO_REUSEADDR,true);
-
+                .option(ChannelOption.SO_BACKLOG, 128)
+                .option(ChannelOption.SO_KEEPALIVE, true)
+                .option(ChannelOption.SO_REUSEADDR, true);
 
         ChannelFuture f = b.bind(8765).sync();
 
@@ -56,7 +55,5 @@ public class Server {
 
         workerGroup.shutdownGracefully();
         bossGroup.shutdownGracefully();
-
-
     }
 }
