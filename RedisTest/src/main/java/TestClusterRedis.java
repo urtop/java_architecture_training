@@ -11,12 +11,12 @@ public class TestClusterRedis {
 	public static void main(String[] args) throws IOException {
 	    
 	    Set<HostAndPort> jedisClusterNode = new HashSet<HostAndPort>();
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7001));
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7002));
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7003));
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7004));
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7005));
-	    jedisClusterNode.add(new HostAndPort("192.168.1.171", 7006));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7001));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7002));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7003));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7004));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7005));
+	    jedisClusterNode.add(new HostAndPort("1.1.1.2", 7006));
 	    //GenericObjectPoolConfig goConfig = new GenericObjectPoolConfig();
 	    //JedisCluster jc = new JedisCluster(jedisClusterNode,2000,100, goConfig);
 	    JedisPoolConfig cfg = new JedisPoolConfig();
