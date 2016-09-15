@@ -20,7 +20,12 @@ public class Sender {
         Connection connection = connectionFactory.createConnection();
         connection.start();
 
-        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+//        Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+
+        //使用事务
+        Session session = connection.createSession(true, Session.AUTO_ACKNOWLEDGE);
+
+
 
         Destination destination = session.createQueue("queue1");
 
@@ -36,6 +41,10 @@ public class Sender {
 
             messageProducer.send(textMessage);
         }
+
+        //对应上面的开启事务，不提交就没有数据被发送了
+        session.commit();
+
         if (connection != null) {
 
             connection.close();
