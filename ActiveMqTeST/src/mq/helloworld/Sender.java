@@ -1,18 +1,20 @@
 package mq.helloworld;
 
 import org.apache.activemq.ActiveMQConnectionFactory;
-import org.apache.activemq.broker.region.policy.DeadLetterStrategy;
 
 import javax.jms.*;
 
 /**
- * Created by Mark Tao on 2016/9/13 20:49.
+ * Created by Mark Tao on 2016/9/15 10:31.
  */
 
 
 public class Sender {
     public static void main(String[] args) throws JMSException {
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(ActiveMQConnectionFactory.DEFAULT_USER, ActiveMQConnectionFactory.DEFAULT_PASSWORD, "tcp://localhost:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory(
+                ActiveMQConnectionFactory.DEFAULT_USER,
+                ActiveMQConnectionFactory.DEFAULT_PASSWORD,
+                "tcp://localhost:61616");
 
 
         Connection connection = connectionFactory.createConnection();
