@@ -51,7 +51,7 @@ public class TestSingleRedis {
     @Test
     public void testString() {
         //-----添加数据----------  
-        jedis.set("name","bhz");//向key-->name中放入了value-->xinxin  
+        jedis.set("name","mark");//向key-->name中放入了value-->xinxin
         System.out.println(jedis.get("name"));//执行结果：xinxin  
         
         jedis.append("name", " is my lover"); //拼接
@@ -60,7 +60,7 @@ public class TestSingleRedis {
         jedis.del("name");  //删除某个键
         System.out.println(jedis.get("name"));
         //设置多个键值对
-        jedis.mset("name","bhz","age","27","qq","174754613");
+        jedis.mset("name","mark","age","27","qq","174754613");
         jedis.incr("age"); //进行加1操作
         System.out.println(jedis.get("name") + "-" + jedis.get("age") + "-" + jedis.get("qq"));
     }

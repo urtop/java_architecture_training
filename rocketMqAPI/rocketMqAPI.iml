@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
-  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_5" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
     <content url="file://$MODULE_DIR$">
@@ -11,12 +11,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:unknown" level="project" />
-    <orderEntry type="library" name="Maven: groupId:rocketmq-client:unknown" level="project" />
-    <orderEntry type="library" name="Maven: groupId:rocketmq-srvutil:unknown" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:unknown" level="project" />
-    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:unknown" level="project" />
-    <orderEntry type="library" name="Maven: jboss:javassist:unknown" level="project" />
     <orderEntry type="module-library">
       <library name="lib">
         <CLASSES>
@@ -30,5 +24,11 @@
         <jarDirectory url="file://$MODULE_DIR$/src/main/lib" recursive="false" type="SOURCES" />
       </library>
     </orderEntry>
+    <orderEntry type="library" scope="TEST" name="Maven: junit:junit:unknown" level="project" />
+    <orderEntry type="library" name="Maven: groupId:rocketmq-client:unknown" level="project" />
+    <orderEntry type="library" name="Maven: groupId:rocketmq-srvutil:unknown" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-classic:unknown" level="project" />
+    <orderEntry type="library" name="Maven: ch.qos.logback:logback-core:unknown" level="project" />
+    <orderEntry type="library" name="Maven: jboss:javassist:unknown" level="project" />
   </component>
 </module>
