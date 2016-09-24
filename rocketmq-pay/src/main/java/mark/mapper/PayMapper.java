@@ -18,8 +18,8 @@ public interface PayMapper {
      * @mbg.generated Sat Sep 24 13:59:39 CST 2016
      */
     @Delete({
-        "delete from pay",
-        "where userid = #{userid,jdbcType=CHAR}"
+            "delete from pay",
+            "where userid = #{userid,jdbcType=CHAR}"
     })
     int deleteByPrimaryKey(String userid);
 
@@ -30,12 +30,12 @@ public interface PayMapper {
      * @mbg.generated Sat Sep 24 13:59:39 CST 2016
      */
     @Insert({
-        "insert into pay (userid, username, ",
-        "amount, detail, update_by, ",
-        "update_time)",
-        "values (#{userid,jdbcType=CHAR}, #{username,jdbcType=CHAR}, ",
-        "#{amount,jdbcType=DOUBLE}, #{detail,jdbcType=CHAR}, #{updateBy,jdbcType=CHAR}, ",
-        "#{updateTime,jdbcType=TIMESTAMP})"
+            "insert into pay (userid, username, ",
+            "amount, detail, update_by, ",
+            "update_time)",
+            "values (#{userid,jdbcType=CHAR}, #{username,jdbcType=CHAR}, ",
+            "#{amount,jdbcType=DOUBLE}, #{detail,jdbcType=CHAR}, #{updateBy,jdbcType=CHAR}, ",
+            "#{updateTime,jdbcType=TIMESTAMP})"
     })
     int insert(Pay record);
 
@@ -46,18 +46,18 @@ public interface PayMapper {
      * @mbg.generated Sat Sep 24 13:59:39 CST 2016
      */
     @Select({
-        "select",
-        "userid, username, amount, detail, update_by, update_time",
-        "from pay",
-        "where userid = #{userid,jdbcType=CHAR}"
+            "select",
+            "userid, username, amount, detail, update_by, update_time",
+            "from pay",
+            "where userid = #{userid,jdbcType=CHAR}"
     })
     @Results({
-        @Result(column="userid", property="userid", jdbcType=JdbcType.CHAR, id=true),
-        @Result(column="username", property="username", jdbcType=JdbcType.CHAR),
-        @Result(column="amount", property="amount", jdbcType=JdbcType.DOUBLE),
-        @Result(column="detail", property="detail", jdbcType=JdbcType.CHAR),
-        @Result(column="update_by", property="updateBy", jdbcType=JdbcType.CHAR),
-        @Result(column="update_time", property="updateTime", jdbcType=JdbcType.TIMESTAMP)
+            @Result(column="userid", property="userid", jdbcType=JdbcType.CHAR, id=true),
+            @Result(column="username", property="username", jdbcType=JdbcType.CHAR),
+            @Result(column="amount", property="amount", jdbcType=JdbcType.DOUBLE),
+            @Result(column="detail", property="detail", jdbcType=JdbcType.CHAR),
+            @Result(column="update_by", property="updateBy", jdbcType=JdbcType.CHAR),
+            @Result(column="update_time", property="updateTime", jdbcType=JdbcType.TIMESTAMP)
     })
     Pay selectByPrimaryKey(String userid);
 
@@ -68,18 +68,18 @@ public interface PayMapper {
      * @mbg.generated Sat Sep 24 13:59:39 CST 2016
      */
     @Select({
-        "select",
-        "userid, username, amount, detail, update_by, update_time",
-        "from pay",
-        "order by age desc,username asc"
+            "select",
+            "userid, username, amount, detail, update_by, update_time",
+            "from pay",
+            "order by age desc,username asc"
     })
     @Results({
-        @Result(column="userid", property="userid", jdbcType=JdbcType.CHAR, id=true),
-        @Result(column="username", property="username", jdbcType=JdbcType.CHAR),
-        @Result(column="amount", property="amount", jdbcType=JdbcType.DOUBLE),
-        @Result(column="detail", property="detail", jdbcType=JdbcType.CHAR),
-        @Result(column="update_by", property="updateBy", jdbcType=JdbcType.CHAR),
-        @Result(column="update_time", property="updateTime", jdbcType=JdbcType.TIMESTAMP)
+            @Result(column="userid", property="userid", jdbcType=JdbcType.CHAR, id=true),
+            @Result(column="username", property="username", jdbcType=JdbcType.CHAR),
+            @Result(column="amount", property="amount", jdbcType=JdbcType.DOUBLE),
+            @Result(column="detail", property="detail", jdbcType=JdbcType.CHAR),
+            @Result(column="update_by", property="updateBy", jdbcType=JdbcType.CHAR),
+            @Result(column="update_time", property="updateTime", jdbcType=JdbcType.TIMESTAMP)
     })
     List<Pay> selectAll();
 
@@ -90,13 +90,13 @@ public interface PayMapper {
      * @mbg.generated Sat Sep 24 13:59:39 CST 2016
      */
     @Update({
-        "update pay",
-        "set username = #{username,jdbcType=CHAR},",
-          "amount = #{amount,jdbcType=DOUBLE},",
-          "detail = #{detail,jdbcType=CHAR},",
-          "update_by = #{updateBy,jdbcType=CHAR},",
-          "update_time = #{updateTime,jdbcType=TIMESTAMP}",
-        "where userid = #{userid,jdbcType=CHAR}"
+            "update pay",
+            "set username = #{username,jdbcType=CHAR},",
+            "amount = #{amount,jdbcType=DOUBLE},",
+            "detail = #{detail,jdbcType=CHAR},",
+            "update_by = #{updateBy,jdbcType=CHAR},",
+            "update_time = #{updateTime,jdbcType=TIMESTAMP}",
+            "where userid = #{userid,jdbcType=CHAR}"
     })
     int updateByPrimaryKey(Pay record);
 }
