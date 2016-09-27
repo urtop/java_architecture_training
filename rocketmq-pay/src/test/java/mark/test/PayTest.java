@@ -85,7 +85,7 @@ public class PayTest {
 	public void test2() throws Exception {
 		long end = new Date().getTime();
 		long begin = end - 60 * 1000 * 60 * 24;
-		QueryResult qr = this.mQProducer.queryMessage("pay", "6e4cefbb-5216-445f-9027-d96dd54a4afb", 10, begin, end);
+		QueryResult qr = this.mQProducer.queryMessage("pay", "edb2a025-bedd-412f-9667-56cca478a343", 10, begin, end);
 		List<MessageExt> list = qr.getMessageList();
 		for(MessageExt me : list){
 			

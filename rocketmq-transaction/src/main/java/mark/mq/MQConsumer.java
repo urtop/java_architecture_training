@@ -21,7 +21,7 @@ import com.alibaba.rocketmq.common.message.MessageExt;
 public class MQConsumer {
 	
 	private final String GROUP_NAME = "transaction-balance";
-	private final String NAMESRV_ADDR = "192.168.1.111:9876;192.168.1.112:9876;192.168.1.113:9876;192.168.1.114:9876";
+	private final String NAMESRV_ADDR = "1.1.1.2:9876;1.1.1.3:9876;";
 	private DefaultMQPushConsumer consumer;
 	
 	@Autowired
@@ -61,7 +61,7 @@ public class MQConsumer {
 				//userid
 				String userid = messageBody.getString("userid");
 				//money
-				double money = messageBody.getDouble("money");
+				double money = Double.parseDouble(messageBody.getString("money"));
 				//mode
 				String balance_mode = messageBody.getString("balance_mode");
 				//业务逻辑处理
