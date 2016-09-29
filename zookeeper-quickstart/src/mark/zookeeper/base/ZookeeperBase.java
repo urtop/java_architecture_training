@@ -2,10 +2,8 @@ package mark.zookeeper.base;
 
 import java.util.concurrent.CountDownLatch;
 
-import org.apache.zookeeper.WatchedEvent;
-import org.apache.zookeeper.Watcher;
+import org.apache.zookeeper.*;
 import org.apache.zookeeper.Watcher.Event.EventType;
-import org.apache.zookeeper.ZooKeeper;
 import org.apache.zookeeper.Watcher.Event.KeeperState;
 
 /**
@@ -45,11 +43,12 @@ public class ZookeeperBase {
 		
 		System.out.println("..");
 		//创建父节点
-//		zk.create("/testRoot", "testRoot".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-		
-		//创建子节点
-//		zk.create("/testRoot/children", "children data".getBytes(), Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
-		
+//		String ret = zk.create("/testRoot", "testRoot".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+//        System.out.println(ret);
+
+        //创建子节点
+		String ret = zk.create("/testRoot/children", "children data".getBytes(), ZooDefs.Ids.OPEN_ACL_UNSAFE, CreateMode.PERSISTENT);
+        System.out.println(ret);
 		//获取节点洗信息
 //		byte[] data = zk.getData("/testRoot", false, null);
 //		System.out.println(new String(data));
