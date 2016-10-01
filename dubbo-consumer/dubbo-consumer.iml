@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/classes/dependency-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/dependency-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/classes/direct-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/direct-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/sample-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/classes/sample-consumer.xml</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-admin-2.5.2-sources.jar!/META-INF/spring/dubbo-admin.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-admin-2.5.2-sources.jar</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-demo-consumer-2.5.2-sources.jar!/META-INF/spring/dubbo-demo-action.xml</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-demo-consumer-2.5.2-sources.jar!/META-INF/spring/dubbo-demo-consumer.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-demo-consumer-2.5.2-sources.jar</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-demo-provider-2.5.2-sources.jar!/META-INF/spring/dubbo-demo-provider.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-demo-provider-2.5.2-sources.jar</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-registry-simple-2.5.2-sources.jar!/META-INF/spring/dubbo-registry-simple.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/dubbo-registry-simple-2.5.2-sources.jar</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/netty-3.2.2.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/netty-3.2.2.Final.jar</file>
+          <file>jar://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/netty-3.2.5.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
+          <file>file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib/netty-3.2.5.Final.jar</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="jdk" jdkName="1.7" jdkType="JavaSDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="lib (2)">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/src/WebRoot/WEB-INF/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
