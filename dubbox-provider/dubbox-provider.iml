@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="Spring">
+      <configuration>
+        <fileset id="fileset" name="Spring Application Context" removed="false">
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/dubbo-provider.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/classes/dubbo-provider.xml</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-bindings-soap-2.6.1.jar!/META-INF/cxf/cxf-extension-soap.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-bindings-soap-2.6.1.jar</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-core-2.6.1.jar!/META-INF/cxf/cxf.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-core-2.6.1.jar</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-databinding-jaxb-2.6.1.jar!/META-INF/cxf/java2wsbeans.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-databinding-jaxb-2.6.1.jar</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-transports-http-2.6.1.jar!/META-INF/cxf/cxf-extension-http.xml</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-transports-http-2.6.1.jar!/META-INF/cxf/osgi/cxf-extension-osgi.xml</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-transports-http-2.6.1.jar!/META-INF/cxf/cxf-servlet.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/lib/cxf-rt-transports-http-2.6.1.jar</file>
+          <file>jar://$MODULE_DIR$/WebRoot/WEB-INF/lib/netty-3.7.0.Final.jar!/org/jboss/netty/container/spring/beans.xml</file>
+          <file>file://$MODULE_DIR$/WebRoot/WEB-INF/lib/netty-3.7.0.Final.jar</file>
+        </fileset>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library name="lib (2)">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/WebRoot/WEB-INF/lib" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
