@@ -1,4 +1,4 @@
-package bhz.test;
+package mark.test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,7 +9,7 @@ import java.io.ObjectOutputStream;
 import java.util.HashMap;
 import java.util.Map;
 
-import bhz.entity.Simple;
+import mark.entity.Simple;
 
 public class MyJavaSer {  
 	  

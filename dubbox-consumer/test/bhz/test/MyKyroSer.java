@@ -1,4 +1,4 @@
-package bhz.test;
+package mark.test;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -9,7 +9,7 @@ import java.util.Map;
 
 import org.objenesis.strategy.StdInstantiatorStrategy;
 
-import bhz.entity.Simple;
+import mark.entity.Simple;
 
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.KryoException;

@@ -7,7 +7,7 @@
         http://code.alibabatech.com/schema/dubbo/dubbo.xsd
         ">
 	
-	<dubbo:annotation package="bhz" />
+	<dubbo:annotation package="mark" />
 	
 	<!-- 提供方应用信息，用于计算依赖关系 -->
 	<dubbo:application name="dependency-provider" />
@@ -20,7 +20,7 @@
 	
 	<!-- 注意这里，我们在使用DependencyService的时候，这个服务可能需要依赖某一个服务，比如SampleService 检查级联依赖关系 默认为true 当有依赖服务的时候，需要根据需求进行设置 -->
 	<dubbo:reference id="sampleService" check="true"
-		interface="bhz.dubbo.sample.provider.SampleService" />
+		interface="mark.dubbo.sample.provider.SampleService" />
 
 	
 	

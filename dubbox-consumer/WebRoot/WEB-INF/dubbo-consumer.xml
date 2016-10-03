@@ -15,8 +15,8 @@
     <dubbo:registry address="zookeeper://192.168.1.121:2181?backup=192.168.1.122:2181,192.168.1.123:2181"/>
     
     <!-- 生成远程服务代理，可以像使用本地bean -->
-	<dubbo:reference interface="bhz.service.UserService" id="userService" />
+	<dubbo:reference interface="mark.service.UserService" id="userService" />
     <!-- 生成远程服务代理，可以像使用本地bean -->
-	<dubbo:reference interface="bhz.service.SimpleService" id="simpleService" />
+	<dubbo:reference interface="mark.service.SimpleService" id="simpleService" />
 	
 </beans>

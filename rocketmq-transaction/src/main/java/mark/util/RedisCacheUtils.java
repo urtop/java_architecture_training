@@ -80,7 +80,7 @@ public final class RedisCacheUtils {
     	//SharedJedis
     	for(int i = 0; i <20; i++){
         	ShardedJedis sj = RedisCacheUtils.getShardedJedis();
-        	sj.set("name", "bhz");
+        	sj.set("name", "mark");
         	System.out.println(sj.get("name"));
         	RedisCacheUtils.colseShardedJedis(sj);
     	}

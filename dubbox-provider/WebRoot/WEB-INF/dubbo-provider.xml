@@ -33,20 +33,20 @@
     <!-- kryo实现序列化 -->
     <dubbo:protocol name="dubbo" />
 
-    <dubbo:annotation package="bhz.service" />
+    <dubbo:annotation package="mark.service" />
      
     <dubbo:protocol name="rest" server="tomcat" port="8888" contextpath="provider" accepts="500" />
     
 	<!-- 和本地bean一样实现服务 -->
 	<!-- 
-	<bean id="userService" class="bhz.service.impl.UserServiceImpl" />
-	<bean id="simpleService" class="bhz.service.impl.SimpleServiceImpl" />
+	<bean id="userService" class="mark.service.impl.UserServiceImpl" />
+	<bean id="simpleService" class="mark.service.impl.SimpleServiceImpl" />
 	 -->
 	
 	<!-- 声明需要暴露的服务接口 -->
 	<!--  
-	<dubbo:service interface="bhz.service.UserService" ref="userService" />
-	<dubbo:service interface="bhz.service.SimpleService" ref="simpleService" />
+	<dubbo:service interface="mark.service.UserService" ref="userService" />
+	<dubbo:service interface="mark.service.SimpleService" ref="simpleService" />
 	-->
 	
 	

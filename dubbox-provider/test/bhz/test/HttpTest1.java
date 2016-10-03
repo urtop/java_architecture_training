@@ -1,11 +1,11 @@
-package bhz.test;
+package mark.test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import bhz.entity.User;
-import bhz.utils.FastJsonConvert;
-import bhz.utils.HttpProxy;
+import mark.entity.User;
+import mark.utils.FastJsonConvert;
+import mark.utils.HttpProxy;
 
 public class HttpTest1 {
 

@@ -14,6 +14,6 @@
 
 	<!-- 生成远程服务代理，可以像使用本地bean一样使用demoService 检查级联依赖关系 默认为true 当有依赖服务的时候，需要根据需求进行设置 -->
 	<dubbo:reference id="sampleService" check="false"
-		interface="bhz.dubbo.sample.provider.SampleService" />
+		interface="mark.dubbo.sample.provider.SampleService" />
 
 </beans>

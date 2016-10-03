@@ -1,10 +1,10 @@
-package bhz.test;
+package mark.test;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import bhz.entity.Simple;
-import bhz.service.SimpleService;
-import bhz.service.UserService;
+import mark.entity.Simple;
+import mark.service.SimpleService;
+import mark.service.UserService;
 
 public class Consumer {
 

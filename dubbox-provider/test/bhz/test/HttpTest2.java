@@ -1,9 +1,9 @@
-package bhz.test;
+package mark.test;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import bhz.http.HttpCallerUtils;
+import mark.http.HttpCallerUtils;
 
 public class HttpTest2 {
 
